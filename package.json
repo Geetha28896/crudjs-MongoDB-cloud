@@ -1,0 +1,25 @@
+{
+  "name": "mongomyatlas",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "start": "nodemon app.js"
+  },
+  "author": "geethat1@quinnox.com",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongodb": "^4.10.0",
+    "mongoose": "^6.6.5",
+    "time-stamp": "^2.2.0"
+  },
+  "devDependencies": {
+    "dotenv": "^16.0.3",
+    "jest": "^29.2.0",
+    "mocha": "^10.0.0",
+    "nodemon": "^2.0.20",
+    "supertest": "^6.3.0"
+  }
+}
