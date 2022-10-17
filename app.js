@@ -1,7 +1,7 @@
 const express = require("express");
 const productController = require("./controller/productController");
 const orderController = require("./controller/orderController");
-require("dotenv").config();
+//require("dotenv").config();
 
 //Database connection
 const mongoose = require("mongoose");

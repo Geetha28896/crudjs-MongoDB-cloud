@@ -4,7 +4,7 @@ const products = require("../models/tbl_products");
 exports.getProducts = async (req, res) => {
   try {
     let productData = await products.find();
-    console.log(productData);
+    //console.log(productData);
     res.send(productData);
   } catch (e) {
     console.log(e.message);

@@ -2,10 +2,14 @@
   "name": "mongomyatlas",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
-    "test": "jest",
-    "start": "nodemon app.js"
+    "start": "node",
+    "test": "env-cmd ./config/test.env/ jest --watch ",
+    "dev": "env-cmd ./config/dev.env nodemon"
+  },
+  "jest": {
+    "testEnvironment": "node"
   },
   "author": "geethat1@quinnox.com",
   "license": "ISC",
@@ -16,7 +20,7 @@
     "time-stamp": "^2.2.0"
   },
   "devDependencies": {
-    "dotenv": "^16.0.3",
+    "env-cmd": "^8.0.2",
     "jest": "^29.2.0",
     "mocha": "^10.0.0",
     "nodemon": "^2.0.20",
